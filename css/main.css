@@ -1,12 +1,12 @@
 .jumbotron {
-    background-color:cornflowerblue;
+    background-color: #0069d9;
     color: black;
 }
 
 footer {
     padding: 10px;
     margin-bottom: 0px;
-    background-color: cornflowerblue;
+    background-color:#0069d9;
     margin-top: 10px;
 }
 
@@ -24,4 +24,28 @@ footer {
 
 a {
     color: darkblue;
+}
+
+.footer-icon {
+    padding-right: 5px;
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover {
+    color: lightblue;
+}
+
+footer h3 {
+    color: white;
+}
+
+.jumbotron h1 {
+    color: white;
 }
