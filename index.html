@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <!--SE AGREGA FONTAWESOME COMO ALTERNATIVA DE OPEN-ICONIC-->
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
   <title>Hoteles</title>
@@ -14,14 +15,15 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Hoteles</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupporttedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigaition">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupporttedContent"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigaition">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupporttedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Nuestros Aliados</a></li>
+        <li class="nav-item"><a class="nav-link" href="./prices.html">Precios</a></li>
         <li class="nav-item"><a class="nav-link" href="./contact.html">Contactenos</a></li>
       </ul>
     </div>
@@ -43,39 +45,20 @@
       <div class="col-sm-4">
         <h3>Elemento 2</h3>
         <p>Descripción del elemento 2</p>
-      </div>  
+      </div>
       <div class="col-sm-4">
         <h3>Elemento 3</h3>
         <p>Descripción del elemento 3</p>
       </div>
     </div>
     <hr>
-    <div class="d-flex flex-wrap">
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel 1</h4>
-          <p>Esta es la descripción del Hotel 1</p>
-        </div>
-        <div>
-          <button class="btn btn-primary btn-reserva">
-            <i class="fa fa-ticket footer-icon"></i>Reservar
-            </button>
-        </div>
-      </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel 2</h4>
-          <p>Esta es la descripción del Hotel 2</p></div>
-          <div>
-            <button class="btn btn-primary btn-reserva">
-              <i class="fa fa-ticket footer-icon"></i>Resarvar
-            </button>
-          </div>
-      </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel 3</h4>
-        <p>Esta es la descripción del Hotel 3</p>
+    <div class="card-columns">
+      <div class="card card-hotel mr-2">
+        <img class="card-img-top" src="images/hotel.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Hotel 1</h4>
+          <p class="card-text">Esta es la descripción del Hotel 1, mejor zona de la capital</p>
+          <p class="card-footer text-muted">Promocion</p>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva">
@@ -83,10 +66,24 @@
           </button>
         </div>
       </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
+      <div class="card-hotel  card mr-2">
+        <img class="card-img-top" src="images/hotel5.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Hotel 2</h4>
+          <p class="card-text">Esta es la descripción del Hotel 2, zona campestre a 1 Hora de la capital, clima templado
+          </p>
+        </div>
         <div>
-          <h4>Hotel 4</h4>
-        <p>Esta es la descripción del Hotel 4, ubicado en la costa pacifica</p>
+          <button class="btn btn-primary btn-reserva">
+            <i class="fa fa-ticket footer-icon"></i>Resarvar
+          </button>
+        </div>
+      </div>
+      <div class="card-hotel  card mr-2">
+        <img class="card-img-top" src="images/hotel2.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Hotel 3</h4>
+          <p class="card-text">Esta es la descripción del Hotel 3</p>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva">
@@ -94,10 +91,11 @@
           </button>
         </div>
       </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel 5</h4>
-        <p>Esta es la descripción del Hotel 5, ubicado en la costa atlantica</p>
+      <div class="card-hotel  card mr-2">
+        <img class="card-img-top" src="images/bed.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Hotel 4</h4>
+          <p class="card-text">Esta es la descripción del Hotel 4, ubicado en la costa pacifica</p>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva">
@@ -105,21 +103,12 @@
           </button>
         </div>
       </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-       <div>
-        <h4>Hotel 6</h4>
-        <p>Esta es la descripción del Hotel 6, ubicado en el centro de la capital</p>
-       </div>
-        <div>
-          <button class="btn btn-primary btn-reserva">
-            <i class="fa fa-ticket footer-icon"></i>Reservar
-          </button>
-        </div>
-      </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel 7</h4>
-        <p>Esta es la descripción del Hotel 7, ubicado cerca 45 de la capital</p>
+      <div class="card-hotel  card mr-2">
+        <img class="card-img-top" src="images/hotel6.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Hotel 5</h4>
+          <p class="card-text">Esta es la descripción del Hotel 5, ubicado en la costa atlantica</p>
+          <p class="card-footer text-muted">Promocion</p>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva">
@@ -127,8 +116,33 @@
           </button>
         </div>
       </div>
+      <div class="card-hotel  card mr-2">
+        <img class="card-img-top" src="images/hotel1.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Hotel 6</h4>
+          <p class="card-text">Esta es la descripción del Hotel 6, ubicado en el centro de la capital</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">
+            <i class="fa fa-ticket footer-icon"></i>Reservar
+          </button>
+        </div>
+      </div>
+      <div class="card-hotel  card">
+        <img class="card-img-top" src="images/hotel4.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Hotel 7</h4>
+          <p class="card-text">Esta es la descripción del Hotel 7, ubicado cerca 45 de la capital</p>
+          <p class="card-footer text-muted">Promocion</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">
+            <i class="fa fa-ticket footer-icon"></i>Reservar
+          </button>
+        </div>
       </div>
     </div>
+  </div>
   </div>
   <footer>
     <div class="row">
@@ -140,6 +154,7 @@
       <div class="col-sm-4">
         <address>
           <h3>Oficinas</h3>
+          <!--SE AGREGA FONTAWESOME COMO ALTERNATIVA DE OPEN-ICONIC-->
           <p><i class="fa fa-home fa-lg footer-icon"></i>Carrera 93 # 73a-70</p>
           <p><i class="fa fa-mobile fa-lg footer-icon"></i>+57 (1) 6495342</p>
           <p><i class="fa fa-envelope footer-icon"></i></span>julen.rubio@outlook.com</p>
