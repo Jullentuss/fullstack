@@ -39,16 +39,36 @@
     </nav>
     <div class="row">
       <div class="col-sm-4">
-        <h3>Elemento 1</h3>
-        <p>Descripción del elemento 1</p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" 
+        data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">
+        ¿Cómo funciona?
+       </button>
       </div>
       <div class="col-sm-4">
-        <h3>Elemento 2</h3>
-        <p>Descripción del elemento 2</p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" 
+        data-target="#reservar" aria-expanded="false" aria-controls="multiCollapse2">
+        ¿Cómo reservar?
+       </button>
       </div>
       <div class="col-sm-4">
-        <h3>Elemento 3</h3>
-        <p>Descripción del elemento 3</p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" 
+        data-target="#pagos" aria-expanded="false" aria-controls="multiCollapse3">
+        Metodos de Pago
+       </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 collapse multi-collapse" id="funciona">
+        <h3>¿Cómo funciona?</h3>
+        <p>Búsca el destino de preferencia y reserva el hotel</p>
+      </div>
+      <div class="col-sm-4 collapse multi-collapse" id="reservar">
+        <h3>¿Cómo reservar?</h3>
+        <p>Seleccionando el boton resevar y diligencia el formulario de reseva</p>
+      </div>
+      <div class="col-sm-4 collapse multi-collapse" id="pagos">
+        <h3>Metodos de Pago</h3>
+        <p>Aceptamos tarjetas débito y crédito</p>
       </div>
     </div>
     <hr>
