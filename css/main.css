@@ -49,3 +49,7 @@ footer h3 {
 .jumbotron h1 {
     color: white;
 }
+
+#priceTabs {
+    margin-bottom: 10px;
+}

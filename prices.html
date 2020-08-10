@@ -39,54 +39,87 @@
       </ol>
     </nav>
 
-    <div class="table-responsive">
-      <table class="table table-striped">
-        <thead class="thead-dark">
-          <th>Categoria</th>
-          <th>Hotel 1</th>
-          <th>Hotel 2</th>
-          <th>Hotel 3</th>
-          <th>Hotel 4</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </td>
-            <td>$100.000</td>
-            <td>$110.000</td>
-            <td>$115.000</td>
-            <td>$120.000</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </td>
-            <td>$150.000</td>
-            <td>$160.000</td>
-            <td>$165.000</td>
-            <td>$170.000</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </td>
-            <td>$200.000</td>
-            <td>$210.000</td>
-            <td>$215.000</td>
-            <td>$220.000</td>
-          </tr>
-        </tbody>
-      </table>
+    <ul class="nav nav-pills" id="priceTabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="precios-tab" data-toggle="pill" 
+        href="#precios" role="tab" aria-controls="precios" aria-selected="true">Precios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="medios-tab" data-toggle="pill" 
+        href="#medios" role="tab" aria-controls="medios" aria-selected="false">Medios de Pago</a>
+      </li>
+    </ul>
 
 
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="precios" role="tabpanel" aria-labelledby="precios-tab">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <th>Categoria</th>
+              <th>Hotel 1</th>
+              <th>Hotel 2</th>
+              <th>Hotel 3</th>
+              <th>Hotel 4</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </td>
+                <td>$100.000</td>
+                <td>$110.000</td>
+                <td>$115.000</td>
+                <td>$120.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </td>
+                <td>$150.000</td>
+                <td>$160.000</td>
+                <td>$165.000</td>
+                <td>$170.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </td>
+                <td>$200.000</td>
+                <td>$210.000</td>
+                <td>$215.000</td>
+                <td>$220.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+   
+      <div class="tab-pane fade" id="medios" role="tabpanel" aria-labelledby="medios-tab">
+        <div class="d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color: #0069d9; color: white;">
+              Medios de Pago
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Master Card</li>
+              <li class="list-group-item">American Express</li>
+              <li class="list-group-item">VISA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+
+   
+
+
 
   </div>
   <footer>
