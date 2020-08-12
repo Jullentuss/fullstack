@@ -181,7 +181,7 @@
         <div class="card-body">
           <h4 class="card-title" data-toggle="popover" data-content="promocion del Hotel 7" title="Promocion">Hotel 7</h4>
           <p class="card-text">Esta es la descripción del Hotel 7, ubicado cerca 45 de la capital</p>
-          <button type="button" class="btn btn-outline-success" data-target="#contacto" data-toggle="modal">Contacto</button>
+          <button id="btnContacto" type="button" class="btn btn-outline-success" data-target="#contacto" data-toggle="modal">Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva">
@@ -192,13 +192,15 @@
     </div>
   </div>
 
-  <div class="modal fade" id="contacto" tabindex=-1 role="dialog" aria-labelledby="contactoModalLabel"
+
+  <!--DEFINICION DEL MODAL-->
+  <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="contactoModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="contactoModalLabel">Dejanos Contactarte</h5>
-          <button type="button" class="close" data-dimiss="modal" aria-label="Close">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -250,13 +252,8 @@
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-  <script>
-    $(function(){
-      $("[data-toggle='tooltip']").tooltip();
-      $("[data-toggle='popover']").popover();
-      $('.carousel').carousel({interval: 5000});
-    });
-  </script>
+  <!--DEFINICION DEL SCRIPT-->
+  <script src="js/index.js"></script>
 
 </body>
 
