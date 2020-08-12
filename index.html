@@ -72,11 +72,12 @@
       </div>
     </div>
     <hr>
+    <!--IMPLEMENTACION DE TOOLTIP--> 
     <div class="card-columns">
       <div class="card card-hotel mr-2">
         <img class="card-img-top" src="images/hotel.png" alt="">
         <div class="card-body">
-          <h4 class="card-title">Hotel 1</h4>
+          <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Tooltip para el Hotel 1">Hotel 1</h4>
           <p class="card-text">Esta es la descripción del Hotel 1, mejor zona de la capital</p>
           <p class="card-footer text-muted">Promocion</p>
         </div>
@@ -89,7 +90,7 @@
       <div class="card-hotel  card mr-2">
         <img class="card-img-top" src="images/hotel5.png" alt="">
         <div class="card-body">
-          <h4 class="card-title">Hotel 2</h4>
+          <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Tooltip para el Hotel 2">Hotel 2</h4>
           <p class="card-text">Esta es la descripción del Hotel 2, zona campestre a 1 Hora de la capital, clima templado
           </p>
         </div>
@@ -102,7 +103,7 @@
       <div class="card-hotel  card mr-2">
         <img class="card-img-top" src="images/hotel2.png" alt="">
         <div class="card-body">
-          <h4 class="card-title">Hotel 3</h4>
+          <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Tooltip para el Hotel 3">Hotel 3</h4>
           <p class="card-text">Esta es la descripción del Hotel 3</p>
         </div>
         <div>
@@ -114,7 +115,7 @@
       <div class="card-hotel  card mr-2">
         <img class="card-img-top" src="images/bed.png" alt="">
         <div class="card-body">
-          <h4 class="card-title">Hotel 4</h4>
+          <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Tooltip para el Hotel 4">Hotel 4</h4>
           <p class="card-text">Esta es la descripción del Hotel 4, ubicado en la costa pacifica</p>
         </div>
         <div>
@@ -123,10 +124,11 @@
           </button>
         </div>
       </div>
+     <!--IMPLEMENTACION DE POPOVER--> 
       <div class="card-hotel  card mr-2">
         <img class="card-img-top" src="images/hotel6.png" alt="">
         <div class="card-body">
-          <h4 class="card-title">Hotel 5</h4>
+          <h4 class="card-title" data-toggle="popover" data-content="promocion del Hotel 5" title="Promocion">Hotel 5</h4>
           <p class="card-text">Esta es la descripción del Hotel 5, ubicado en la costa atlantica</p>
           <p class="card-footer text-muted">Promocion</p>
         </div>
@@ -139,7 +141,7 @@
       <div class="card-hotel  card mr-2">
         <img class="card-img-top" src="images/hotel1.png" alt="">
         <div class="card-body">
-          <h4 class="card-title">Hotel 6</h4>
+          <h4 class="card-title" data-toggle="popover" data-content="promocion del Hotel 6" title="Promocion">Hotel 6</h4>
           <p class="card-text">Esta es la descripción del Hotel 6, ubicado en el centro de la capital</p>
         </div>
         <div>
@@ -151,7 +153,7 @@
       <div class="card-hotel  card">
         <img class="card-img-top" src="images/hotel4.png" alt="">
         <div class="card-body">
-          <h4 class="card-title">Hotel 7</h4>
+          <h4 class="card-title" data-toggle="popover" data-content="promocion del Hotel 7" title="Promocion">Hotel 7</h4>
           <p class="card-text">Esta es la descripción del Hotel 7, ubicado cerca 45 de la capital</p>
           <button type="button" class="btn btn-outline-success" data-target="#contacto" data-toggle="modal">Contacto</button>
         </div>
@@ -219,8 +221,16 @@
   </footer>
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function(){
+      $("[data-toggle='tooltip']").tooltip();
+      $("[data-toggle='popover']").popover();
+    })
+  </script>
+
 </body>
 
 </html>
