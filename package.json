@@ -4,9 +4,15 @@
   "description": "proyecto de coursera fullstack",
   "main": "index.html",
   "scripts": {
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
     "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o css/ css/"
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin prices.html -d dist --htmlmin -o dist/prices.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -19,12 +25,20 @@
   },
   "homepage": "https://github.com/Jullentuss/fullstack#readme",
   "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
     "lite-server": "^2.5.4",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "rimraf": "^3.0.2",
+    "uglify-js": "^3.10.1",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "concurrently": "^5.3.0",
     "font-awesome": "^4.7.0",
+    "jpegtran-bin": "^5.0.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }

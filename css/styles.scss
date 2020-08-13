@@ -3,9 +3,19 @@ $cblueDark: #000a15;
 $cblueLight: #cce1f7;
 $cblueL: #99c3ef;
 
-@mixin margenes($top, $bottom) {
+@mixin margenes($top: 0px, $bottom: 0px) {
     margin-top: $top;
     margin-bottom: $bottom;
+}
+
+@mixin center ($left: auto, $right: auto) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin imgSize ($width, $height) {
+    width: $width;
+    height: $height;
 }
 
 .jumbotron {
@@ -17,12 +27,12 @@ $cblueL: #99c3ef;
 footer {
     padding: 10px;
     background-color:$cblue;
-    @include margenes(10px, 0px);
+    @include margenes(10px);
 }
 
 .card-hotel {
     flex: 1 150px;
-    @include margenes(10px, 0px);
+    @include margenes(10px);
 }
 
 .btn-reserva {
@@ -60,4 +70,16 @@ footer h3 {
 
 #priceTabs {
     @include margenes(0px, 10px);
+}
+
+img.card-img-top {
+    display: block;
+    @include center();
+    @include imgSize(70%, 70%)
+}
+
+img.c-carousel {
+    display: block;
+    @include center();
+    @include imgSize(70%, 70%)
 }
