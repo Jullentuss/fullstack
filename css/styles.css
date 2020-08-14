@@ -57,3 +57,11 @@ img.c-carousel {
   margin-right: auto;
   width: 70%;
   height: 70%; }
+
+a.carousel-control-prev {
+  margin-left: 15%;
+  margin-right: 0; }
+
+a.carousel-control-next {
+  margin-left: 0;
+  margin-right: 15%; }

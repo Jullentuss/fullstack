@@ -83,3 +83,11 @@ img.c-carousel {
     @include center();
     @include imgSize(70%, 70%)
 }
+
+a.carousel-control-prev {
+    @include center(15%, 0)
+}
+
+a.carousel-control-next {
+    @include center(0, 15%)
+}
